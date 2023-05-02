@@ -19,7 +19,7 @@ setup(
     install_requires=requirements,
     entry_points={
         'console_scripts': [
-            'run_lifetime = src.main:main'
+            'run_app = app.main:main'
         ]
     }
 )

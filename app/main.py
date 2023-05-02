@@ -1,6 +1,6 @@
 import datetime, time, random
 import numpy as np
-from src.classes.person import Person
+from app.classes.person import Person
 
 VALID_FOODS = ['steak', 'salad']
 SLEEP_SECS = 10

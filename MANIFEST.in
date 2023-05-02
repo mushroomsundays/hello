@@ -1,2 +1,2 @@
 include *.sh
-recursive-include hello *
+recursive-include app *
