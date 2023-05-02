@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
-with open('requirements.txt') as f:
+with open('/home/jmoore87jr/hello/requirements.txt') as f:
     requirements = f.read().splitlines()
 
-with open('README.md', 'r') as f:
+with open('/home/jmoore87jr/hello/README.md', 'r') as f:
     long_description = f.read()
 
 setup(
