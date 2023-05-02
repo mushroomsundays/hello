@@ -1,0 +1,14 @@
+app:
+  version: ${VERSION}
+environment:
+  sleep_secs: ${SLEEP_SECS}
+  s3:
+    bucket_name: ${S3_BUCKET_NAME}
+    key_name: ${S3_KEY_NAME}
+  database:
+    host: ${DB_HOST}
+    port: ${DB_PORT}
+    name: ${DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    

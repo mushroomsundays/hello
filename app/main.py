@@ -1,9 +1,12 @@
-import datetime, time, random
+import datetime
+import time
+import random
+import os
 import numpy as np
 from app.classes.person import Person
 
 VALID_FOODS = ['steak', 'salad']
-SLEEP_SECS = 10
+SLEEP_SECS = int(os.getenv('SLEEP_SECS'))
 
 def main():
     current_date = datetime.date.today()
