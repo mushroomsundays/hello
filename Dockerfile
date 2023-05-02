@@ -2,10 +2,10 @@
 FROM python:3.9-slim-buster
 
 # Set the working directory to /hello
-WORKDIR /app
+WORKDIR /hello
 
 # Copy the current directory contents into the container at /hello
-COPY . /app
+COPY . /hello
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
@@ -17,7 +17,7 @@ EXPOSE 80
 # Use ENV <variable_name> <variable_value> to define env variables
 # such as database connections or API keys
 ENV NAME World
-ENV PYTHONPATH /app
+ENV PYTHONPATH /hello
 
 # Run app.py when the container launches
-CMD ["python", "main.py"]
+CMD ["python", "app/main.py"]
